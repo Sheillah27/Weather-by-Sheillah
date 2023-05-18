@@ -19,6 +19,9 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 .app-wrapper {
   max-width: 600px;
   margin: 0 auto;
@@ -30,6 +33,7 @@ li {
   margin-top: 30px;
 }
 .display {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 #temperature {
