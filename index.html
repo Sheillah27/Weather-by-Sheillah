@@ -18,62 +18,69 @@
       <div class="app-wrapper">
         <div class="weather-app">
           <form>
-            <input type="text" placeholder="Search city" autocomplete="off" />
-            <input type=" Submit" value="Search" />
-            <span>
-              <button type="button" class="btn btn-info">📍</button>
-            </span>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  placeholder="Search city"
+                  class="form-control"
+                  id="cityInput"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  value="Search"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
           </form>
           <div class="display">
-            <h1>Nairobi</h1>
+            <h1 id="city">City</h1>
             <ul>
-              <li>Date</li>
-              <li>Description</li>
+              <li id="date">Date</li>
+              <li id="description">Condition</li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather">
                 <img
-                  src="https://play-lh.googleusercontent.com/yJ2J5RJhIyr4KS8sl2waCKwiuO0TIUS7mwcnBrK98OuRpV2FO5T511cBUYrtwi7BVP0"
-                  jsaction="VQAsE"
-                  class="r48jcc pT0Scc iPVvYb"
-                  style="
-                    max-width: 60px;
-                    width: 70px;
-                    height: 70px;
-                    margin: 0px;
-                  "
-                  alt="Weather - Apps on Google Play"
-                  jsname="kn3ccd"
-                  aria-hidden="false"
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                  id="icon"
+                  ;
                 />
                 <div>
-                  <strong id="temperature">12</strong
-                  ><span class="units">℃ | ℉</span>
+                  <strong id="temp"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link">℃</a> |
+                    <a href="#" id="fahrenheit-link">℉</a></span
+                  >
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation</li>
-                <li>Humidity</li>
-                <li>Wind</li>
+                <li>Humidity <span id="humidity"></span>%</li>
+                <li>Wind <span id="speed"></span> Km/h</li>
               </ul>
             </div>
           </div>
           <script src="src/index.js"></script>
         </div>
-        <span
-          ><a
-            href="https://github.com/Sheillah27/Weather-by-Sheillah"
-            target="_blank"
-          >
-            Open-sourced code
-          </a>
-          by Sheillah
-        </span>
       </div>
     </div>
+    <span
+      ><a
+        href="https://github.com/Sheillah27/Weather-by-Sheillah"
+        target="_blank"
+      >
+        Open-sourced code
+      </a>
+      by Ms Wafula
+    </span>
   </body>
 </html>
