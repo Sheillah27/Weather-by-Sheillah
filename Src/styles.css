@@ -48,9 +48,15 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
-#celsius-link {
+#celsius-link,
+#fahrenheit-link,
+.active {
   text-decoration: none;
+  color: #0a0a0a;
+  cursor: default;
 }
-#fahrenheit-link {
+#celsius-link,
+#fahrenheit-link,
+.active.hover {
   text-decoration: none;
 }
