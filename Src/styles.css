@@ -1,13 +1,13 @@
 body {
-  font-family: sans-serif;
-  background-image: url("https://img.freepik.com/free-vector/realistic-blue-sky-background_1048-6707.jpg?w=740&t=st=1684523850~exp=1684524450~hmac=015764b06b6ced1ac15e9e267307d285ce7c88ef90892d1150ab61623ddcdfd2");
+  font-family: inherit;
+  color: black;
 }
 h1 {
-  font-size: 24px;
+  font-size: 35px;
   color: #0a0a0a;
-  font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  line-height: 1;
 }
 ul {
   margin: 0;
@@ -16,9 +16,8 @@ ul {
 li {
   list-style: none;
   color: #0a0a0a;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 25px;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -28,7 +27,7 @@ li:first-letter {
   margin: 0 auto;
 }
 .weather-app {
-  background-image: url("https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?w=1060&t=st=1684524250~exp=1684524850~hmac=d519b29bb93b3f2020352df2b6aebb2fc873e1788f709d72d268e7b32d19ebd8");
+  background-image: url("https://img.freepik.com/free-vector/abstract-background-with-sugar-cotton-candy-cloud-design_1048-15339.jpg?t=st=1684621579~exp=1684622179~hmac=a50059d182fbff0a487447330a3b9ab0ca7ca820b380c27cdb021b86391468bc");
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -49,15 +48,17 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
-#celsius-link,
-#fahrenheit-link,
 .active {
-  text-decoration: none;
-  color: #0a0a0a;
+  color: #5e08b4;
   cursor: default;
 }
 #celsius-link,
 #fahrenheit-link,
-.active.hover {
+.remove.active {
+  text-decoration: none;
+}
+#celsius-link,
+#fahrenheit-link,
+.hover {
   text-decoration: none;
 }
