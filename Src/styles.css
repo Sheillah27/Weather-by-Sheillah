@@ -48,8 +48,8 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
-.active {
-  color: rgb(213, 17, 17);
+.a.active {
+  color: black;
 }
 #celsius-link,
 #fahrenheit-link,
