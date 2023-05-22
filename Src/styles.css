@@ -1,4 +1,4 @@
-bbody {
+body {
   font-family: "Laila", sans-serif;
   color: black;
 }
@@ -32,7 +32,6 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 5px;
   margin-top: 30px;
-  height: 360px;
   height: 450px;
 }
 .display {
@@ -57,6 +56,15 @@ li:first-letter {
 .hover {
   text-decoration: none;
   cursor: default;
+}
+.forecast {
+  margin-top: 20;
+  text-align: block;
+  color: #0a0a0a;
+}
+.date {
+  font-size: 16px;
+  opacity: 0.9;
 }
 .min-temp {
   opacity: 0.45;
