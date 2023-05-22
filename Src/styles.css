@@ -48,7 +48,7 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
-.a.active {
+.active {
   color: black;
 }
 #celsius-link,
