@@ -1,5 +1,5 @@
-body {
-  font-family: inherit;
+bbody {
+  font-family: "Laila", sans-serif;
   color: black;
 }
 h1 {
@@ -33,6 +33,7 @@ li:first-letter {
   border-radius: 5px;
   margin-top: 30px;
   height: 360px;
+  height: 450px;
 }
 .display {
   margin-top: 20px;
@@ -49,16 +50,17 @@ li:first-letter {
   top: -34px;
 }
 .active {
-  color: #5e08b4;
-  cursor: default;
-}
-#celsius-link,
-#fahrenheit-link,
-.remove.active {
-  text-decoration: none;
+  color: black;
 }
 #celsius-link,
 #fahrenheit-link,
 .hover {
   text-decoration: none;
+  cursor: default;
+}
+.min-temp {
+  opacity: 0.45;
+}
+.footer {
+  text-align: center;
 }
