@@ -49,7 +49,7 @@ li:first-letter {
   top: -34px;
 }
 .active {
-  color: black;
+  color: rgb(213, 17, 17);
 }
 #celsius-link,
 #fahrenheit-link,
