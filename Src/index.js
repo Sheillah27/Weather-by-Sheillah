@@ -118,6 +118,8 @@ function displayCelsius(event) {
 let celciusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", showQuery);
+let currentButton = document.querySelector("#currentLocation");
+currentButton.addEventListener("click", getCurrentPosition);
 
 let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", showFahrenheit);
@@ -128,3 +130,15 @@ let celciusLink = document.querySelector("#celsius-link");
 celciusLink.addEventListener("click", displayCelsius);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("Click", showFahrenheit);
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "09t366o3358b69a9ae5287476447dcf2";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lat=${lat}&lon=${lon}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(getTemperature);
+}
+
+function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
