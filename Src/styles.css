@@ -1,6 +1,7 @@
 body {
   font-family: "Laila", sans-serif;
   color: black;
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=22");
 }
 h1 {
   font-size: 35px;
@@ -32,7 +33,9 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 5px;
   margin-top: 30px;
+  margin-bottom: 15px;
   height: 450px;
+  box-shadow: 8px 8px 9px rgba(0, 0, 0, 0.6);
 }
 .display {
   margin-top: 20px;
